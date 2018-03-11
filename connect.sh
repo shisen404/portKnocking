@@ -6,7 +6,7 @@ host="$4"
 
 for x in $ports
 do
-    nmap -Pn --host_timeout 201 --max-retries 0 -p $x $host
+    nmap -Pn --host-timeout 201 --max-retries 0 -p $x $host
     sleep 1
 done
 ssh $5@${host}
